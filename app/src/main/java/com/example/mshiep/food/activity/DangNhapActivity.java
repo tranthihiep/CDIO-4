@@ -47,9 +47,12 @@ public class DangNhapActivity extends AppCompatActivity {
                                 Intent intent = new Intent(DangNhapActivity.this, HomeActivity.class);
                                 startActivity(intent);
                             }else if((edtphone.getText().toString().equals("admin") && edtpass.getText().toString().equals("admin"))){
-                                Intent intent = new Intent(DangNhapActivity.this, NhanVienActivity.class);
+                                Intent intent = new Intent(DangNhapActivity.this, AdminMain.class);
                                 startActivity(intent);
-                            }else
+                            }else if((edtphone.getText().toString().equals("nhanvien") && edtpass.getText().toString().equals("nhanvien"))){
+                                Intent intent = new Intent(DangNhapActivity.this, NhanVienActivity.class);
+                                startActivity(intent);}
+                                else
                                 Toast.makeText(DangNhapActivity.this, "Số điện thoại hoặc mật khẩu không đúng", Toast.LENGTH_SHORT).show();
                         }
                     }

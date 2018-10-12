@@ -46,7 +46,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.ChiTietMonAnActivity" />
         <activity android:name=".activity.OrderActivity" />
-        <activity android:name=".activity.QuanLyHoaDon" />
         <activity android:name=".activity.QuanLyThongKe" />
         <activity
             android:name=".activity.Information"

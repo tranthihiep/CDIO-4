@@ -37,13 +37,6 @@ public class AdminMain extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnQuanLyHoaDon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AdminMain.this,QuanLyHoaDon.class);
-                startActivity(intent);
-            }
-        });
         btnThongKe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

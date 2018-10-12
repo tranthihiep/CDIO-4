@@ -20,7 +20,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center">
-        <com.rengwuxian.materialedittext.MaterialEditText
+        <EditText
+            android:drawableLeft="@drawable/ic_name"
+            android:background="@drawable/boder"
             android:id="@+id/edtTenKH"
             android:hint="Tên khách hàng"
             android:layout_width="match_parent"
@@ -29,13 +31,11 @@
             android:text=""
             android:textColor="#0c1580"
             android:textSize="30sp"
-            app:met_baseColor="#0c1580"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="11"
-            app:met_primaryColor="#0c1580"
-            app:met_singleLineEllipsis="true"
             />
-        <com.rengwuxian.materialedittext.MaterialEditText
+        <EditText
+            android:layout_marginTop="5dp"
+            android:background="@drawable/boder"
+            android:drawableLeft="@drawable/ic_date"
             android:id="@+id/edtNgaySinh"
             android:hint="Ngày sinh"
             android:layout_width="match_parent"
@@ -45,11 +45,6 @@
             android:textColor="#0c1580"
             android:textSize="30sp"
             android:inputType="date"
-            app:met_baseColor="#0c1580"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="11"
-            app:met_primaryColor="#0c1580"
-            app:met_singleLineEllipsis="true"
             />
     </LinearLayout>
 
@@ -59,6 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:background="@drawable/boder"
+            android:drawableLeft="@drawable/ic_sex"
             android:layout_marginTop="5dp"
             android:textColor="#0c1580"
             android:text="Giới tính : "
@@ -68,6 +65,7 @@
             android:layout_height="wrap_content" />
 
         <RadioGroup
+            android:layout_marginTop="5dp"
             android:id="@+id/rggioitinhdki"
             android:gravity="center"
             android:layout_gravity="center"
@@ -105,7 +103,7 @@
 
 
     </LinearLayout>
-    <com.rengwuxian.materialedittext.MaterialEditText
+    <EditText
         android:id="@+id/edtSDT"
         android:hint="Số điện thoại"
         android:layout_width="match_parent"
@@ -115,11 +113,8 @@
         android:textColor="#0c1580"
         android:textSize="30sp"
         android:inputType="phone"
-        app:met_baseColor="#0c1580"
-        app:met_floatingLabel="highlight"
-        app:met_maxCharacters="11"
-        app:met_primaryColor="#0c1580"
-        app:met_singleLineEllipsis="true"
+        android:background="@drawable/boder"
+        android:drawableLeft="@drawable/ic_phone"
         />
 
     <com.rengwuxian.materialedittext.MaterialEditText
