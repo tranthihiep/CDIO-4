@@ -10,11 +10,12 @@ public class Order {
     public String ngayOrder;
     public String thangOrder;
     public String namOrder;
+    public int trangThai;
+
     public Order() {
     }
 
-    public Order(String maOrder, String maKH, String tenMon, long giaMon, int soLuong, String soBan,
-                 String ngayOrder, String thangOrder, String namOrder) {
+    public Order(String maOrder, String maKH, String tenMon, long giaMon, int soLuong, String soBan, String ngayOrder, String thangOrder, String namOrder, int trangThai) {
         this.maOrder = maOrder;
         this.maKH = maKH;
         this.tenMon = tenMon;
@@ -24,6 +25,7 @@ public class Order {
         this.ngayOrder = ngayOrder;
         this.thangOrder = thangOrder;
         this.namOrder = namOrder;
+        this.trangThai = trangThai;
     }
 
     public String getMaOrder() {
@@ -96,5 +98,13 @@ public class Order {
 
     public void setNamOrder(String namOrder) {
         this.namOrder = namOrder;
+    }
+
+    public int getTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(int trangThai) {
+        this.trangThai = trangThai;
     }
 }

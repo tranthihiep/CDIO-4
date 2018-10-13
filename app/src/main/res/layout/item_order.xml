@@ -30,7 +30,7 @@ app:cardCornerRadius="8dp">
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="gia  : "
-            android:textColor="#285496"
+            android:textColor="#7085a6"
             android:textSize="15sp" />
     </LinearLayout>
 

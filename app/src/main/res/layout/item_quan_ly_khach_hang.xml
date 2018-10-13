@@ -26,7 +26,7 @@
                         android:layout_margin="3dp"
                         android:layout_weight="7"
                         android:text="ma khach hang"
-                        android:textColor="#606180"
+                        android:textColor="#000000"
                         android:textSize="15dp" />
 
                     <CheckBox
@@ -41,7 +41,7 @@
                     android:layout_margin="3dp"
                     android:textSize="15dp"
                     android:text="ten khach hang"
-                    android:textColor="#606180"
+                    android:textColor="#000000"
                     android:id="@+id/txtTenKhachHang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -49,7 +49,7 @@
                     android:layout_margin="3dp"
                     android:textSize="15dp"
                     android:text="Ngay sinh"
-                    android:textColor="#606180"
+                    android:textColor="#000000"
                     android:id="@+id/txtNgaySinh"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -57,7 +57,7 @@
                     android:layout_margin="3dp"
                     android:textSize="15dp"
                     android:text="Giới tính"
-                    android:textColor="#606180"
+                    android:textColor="#000000"
                     android:id="@+id/txtGioiTinh"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -65,7 +65,7 @@
                     android:layout_margin="3dp"
                     android:textSize="15dp"
                     android:text="SDT"
-                    android:textColor="#606180"
+                    android:textColor="#000000"
                     android:id="@+id/txtSDT"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -73,7 +73,7 @@
                     android:layout_margin="3dp"
                     android:textSize="15dp"
                     android:text="Pass"
-                    android:textColor="#606180"
+                    android:textColor="#000000"
                     android:id="@+id/txtMatKhau"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />

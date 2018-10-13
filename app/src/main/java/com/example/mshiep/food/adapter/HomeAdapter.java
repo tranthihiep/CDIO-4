@@ -51,6 +51,7 @@ public class ItemHolder extends RecyclerView.ViewHolder{
         super(itemView);
         imgHinhMon = (ImageView) itemView.findViewById(R.id.imghinh);
         txtTenDM = (TextView) itemView.findViewById(R.id.txtTenDM);
+        Check.typeFaceTV(context,txtTenDM);
         }
 }
 

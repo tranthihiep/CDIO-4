@@ -212,6 +212,7 @@ public class ChiTietMonAnActivity extends AppCompatActivity implements RatingDia
                 new ArrayAdapter<Integer>(this,android.R.layout.simple_spinner_dropdown_item,soluong);
         String [] soBan = new String[]{"Bàn 01", "Bàn 02","Bàn 03","Bàn 04","Bàn 05","Bàn 06",
                 "Bàn 07","Bàn 08","Bàn 09","Bàn 10","Bàn 11","Bàn 12","Bàn 13","Bàn 14","Bàn 15"};
+
         ArrayAdapter<String> arrayAdapter1 =
                 new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,soBan);
         spinnerSL.setAdapter(arrayAdapter);

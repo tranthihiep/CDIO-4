@@ -50,7 +50,6 @@ public class AdminMain extends AppCompatActivity {
         btbQuanLyMonAn =findViewById(R.id.btnQuanLyMonAn);
         btnQuanLyKhachHang = findViewById(R.id.btnQuanLyKhachHang);
         btnQuanLyNhanVien = findViewById(R.id.btnQuanLyNhanVien);
-        btnQuanLyHoaDon =findViewById(R.id.btnQuanLyHoaDon);
         btnThongKe =findViewById(R.id.btnThongKe);
     }
 }

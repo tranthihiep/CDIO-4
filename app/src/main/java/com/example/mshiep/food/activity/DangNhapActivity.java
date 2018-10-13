@@ -65,7 +65,6 @@ public class DangNhapActivity extends AppCompatActivity {
 
             }
         });
-
     }
     void anhXa(){
         btnDN=findViewById(R.id.btnDN);

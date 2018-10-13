@@ -21,6 +21,7 @@
         android:orientation="vertical"
         android:gravity="center">
         <EditText
+            android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/ic_name"
             android:background="@drawable/boder"
             android:id="@+id/edtTenKH"
@@ -33,9 +34,9 @@
             android:textSize="30sp"
             />
         <EditText
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/boder"
-            android:drawableLeft="@drawable/ic_date"
+            android:drawableLeft="@drawable/ic_day"
             android:id="@+id/edtNgaySinh"
             android:hint="Ngày sinh"
             android:layout_width="match_parent"
@@ -49,7 +50,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -60,11 +61,11 @@
             android:textColor="#0c1580"
             android:text="Giới tính : "
             android:textSize="30sp"
-            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <RadioGroup
+
             android:layout_marginTop="5dp"
             android:id="@+id/rggioitinhdki"
             android:gravity="center"
@@ -74,6 +75,7 @@
             android:layout_height="match_parent" >
 
             <RadioButton
+                android:background="@drawable/boder"
                 android:textStyle="bold"
                 android:textColor="#0c1580"
                 android:id="@+id/radNam"
@@ -83,6 +85,7 @@
                 android:text="Nam" />
 
             <RadioButton
+                android:background="@drawable/boder"
                 android:textStyle="bold"
                 android:textColor="#0c1580"
                 android:id="@+id/radNu"
@@ -92,6 +95,7 @@
                 android:text="Nữ" />
 
             <RadioButton
+                android:background="@drawable/boder"
                 android:textStyle="bold"
                 android:textColor="#0c1580"
                 android:id="@+id/radKhac"
@@ -104,6 +108,7 @@
 
     </LinearLayout>
     <EditText
+        android:layout_marginTop="20dp"
         android:id="@+id/edtSDT"
         android:hint="Số điện thoại"
         android:layout_width="match_parent"
@@ -117,7 +122,10 @@
         android:drawableLeft="@drawable/ic_phone"
         />
 
-    <com.rengwuxian.materialedittext.MaterialEditText
+    <EditText
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_pass"
+        android:background="@drawable/boder"
         android:id="@+id/edtMK"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -127,16 +135,12 @@
         android:textColor="#0c1580"
         android:textColorHint="#0c1580"
         android:textSize="30sp"
-        app:met_baseColor="#0c1580"
-        app:met_floatingLabel="highlight"
-        app:met_maxCharacters="11"
-        app:met_primaryColor="#0c1580"
-        app:met_singleLineEllipsis="true" />
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:weightSum="4">
         <Button

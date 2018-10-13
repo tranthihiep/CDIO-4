@@ -26,7 +26,7 @@
                     android:layout_margin="3dp"
                     android:layout_weight="7"
                     android:text="ma order"
-                    android:textColor="#606180"
+                    android:textColor="#000000"
                     android:textSize="15dp" />
 
                 <CheckBox
@@ -41,7 +41,7 @@
                 android:layout_margin="3dp"
                 android:textSize="15dp"
                 android:text="ma khach hang"
-                android:textColor="#606180"
+                android:textColor="#000000"
                 android:id="@+id/txtMaKhachHangOrder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -51,7 +51,7 @@
                 android:layout_margin="3dp"
                 android:textSize="15dp"
                 android:text="Ten mon"
-                android:textColor="#606180"
+                android:textColor="#000000"
                 android:id="@+id/txtTenMonOrder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -59,7 +59,7 @@
                 android:layout_margin="3dp"
                 android:textSize="15dp"
                 android:text="Ngay"
-                android:textColor="#606180"
+                android:textColor="#000000"
                 android:id="@+id/txtNgayOrder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -67,7 +67,7 @@
                 android:layout_margin="3dp"
                 android:textSize="15dp"
                 android:text="Thanh Tien"
-                android:textColor="#606180"
+                android:textColor="#000000"
                 android:id="@+id/txtThanhTienOrder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

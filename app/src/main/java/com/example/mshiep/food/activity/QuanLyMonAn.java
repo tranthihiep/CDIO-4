@@ -58,7 +58,7 @@ public class QuanLyMonAn extends AppCompatActivity {
     Button btnAdd,btnEdit,btnDelete;
     DatabaseReference mData;
     EditText edtTenMonAn,edtGia,edtMoTa;
-    EditText edtID;
+    TextView edtID;
     Spinner spinnerLoai;
     String tenmonan,tenloai,mota,id;
     ImageView imgHinh;
@@ -85,7 +85,7 @@ public class QuanLyMonAn extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                id = edtID.getText().toString();
+                id = mData.push().getKey();
                 gia = Float.parseFloat(edtGia.getText().toString());
                 tenmonan = edtTenMonAn.getText().toString();
                 tenloai = spinnerLoai.getSelectedItem().toString();
@@ -123,6 +123,7 @@ public class QuanLyMonAn extends AppCompatActivity {
                             result.addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
+
                                     String photoStringLink = uri.toString();
                                     MonAn ma = new MonAn(id,tenloai,tenmonan,gia,mota,photoStringLink);
                                     mData.child(id).setValue(ma, new DatabaseReference.CompletionListener() {
