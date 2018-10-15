@@ -5,26 +5,30 @@
     android:layout_height="match_parent"
     tools:context=".activity.OrderNhanVien"
     android:orientation="vertical"
+    android:weightSum="9"
     android:background="@drawable/moao">
 
     <ListView
+        android:layout_weight="7"
         android:id="@+id/lvOrderNV"
         android:layout_width="match_parent"
-        android:layout_height="450dp">
+        android:layout_height="0dp">
     </ListView>
     <Button
+        android:layout_weight="1"
         android:background="@drawable/button"
         android:textSize="20dp"
         android:text="Order xong"
         android:id="@+id/btnOrderXong"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="0dp" />
     <Button
+        android:layout_weight="1"
         android:background="@drawable/button"
         android:textSize="20dp"
         android:text="Quay lại"
         android:id="@+id/btnQuayLaiNV"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="0dp" />
 </LinearLayout>
 
