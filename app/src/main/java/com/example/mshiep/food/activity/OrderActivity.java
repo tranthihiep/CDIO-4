@@ -33,6 +33,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class OrderActivity extends AppCompatActivity {
+
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private NavigationView mNavigationView;
@@ -48,7 +49,7 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order);
 
         anhXa();
-        mData = FirebaseDatabase.getInstance().getReference("TrangThai");
+
         setDrawerLayout();
         setClickNavigationView();
         checkData();
@@ -116,12 +117,12 @@ public class OrderActivity extends AppCompatActivity {
                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
                     String id = mData.push().getKey();
-                    TrangThai kh = new TrangThai(id,1,ChiTietMonAnActivity.sb,Float.parseFloat(txtTongTien.getText().toString()));
+                    TrangThai kh = new TrangThai(id,1,ChiTietMonAnActivity.sb,txtTongTien.getText().toString());
                     mData.child(id).setValue(kh, new DatabaseReference.CompletionListener() {
                         @Override
                         public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                             if (databaseError == null) {
-                                Toast.makeText(OrderActivity.this, "Lưu dữ liệu thành công", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(OrderActivity.this, "Lưu dữ lieu trạng thái", Toast.LENGTH_SHORT).show();
                             } else {
                                 Toast.makeText(OrderActivity.this, "Lỗi lưu dữ liệu", Toast.LENGTH_SHORT).show();
                             }
@@ -179,7 +180,7 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     public static void eventUltil() {
-        long tongtien = 0;
+        double tongtien = 0;
         for (int i =0; i<HomeActivity.mangOrder.size();i++){
             tongtien += HomeActivity.mangOrder.get(i).getGiaMon();
         }
@@ -200,6 +201,7 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     private void anhXa() {
+        mData = FirebaseDatabase.getInstance().getReference("TrangThai");
         lvGoiMon = findViewById(R.id.lvOrder);
         txtthongbaoOrder =findViewById(R.id.txtthongbaoOrder);
         txtTongTien = findViewById(R.id.txtTongTien);

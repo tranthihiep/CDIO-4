@@ -79,7 +79,7 @@ public class OrderNhanVien extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent(OrderNhanVien.this, NhanVienActivity.class);
-                intent1.putExtra("ttt", value1+" đợi giao...");
+                intent1.putExtra("ttt", value1 + " đợi giao...");
                 startActivity(intent1);
 
             }

@@ -4,13 +4,13 @@ public class TrangThai {
     String maTrangThai;
     int trangThai;
     String soBan;
-    float tongTien;
+    String tongTien;
 
 
     public TrangThai() {
     }
 
-    public TrangThai(String maTrangThai, int trangThai, String soBan, float tongTien) {
+    public TrangThai(String maTrangThai, int trangThai, String soBan, String tongTien) {
         this.maTrangThai = maTrangThai;
         this.trangThai = trangThai;
         this.soBan = soBan;
@@ -41,11 +41,11 @@ public class TrangThai {
         this.soBan = soBan;
     }
 
-    public float getTongTien() {
+    public String getTongTien() {
         return tongTien;
     }
 
-    public void setTongTien(float tongTien) {
+    public void setTongTien(String tongTien) {
         this.tongTien = tongTien;
     }
 }

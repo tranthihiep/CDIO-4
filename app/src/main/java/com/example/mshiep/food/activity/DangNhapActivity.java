@@ -52,8 +52,7 @@ public class DangNhapActivity extends AppCompatActivity {
                             }else if((edtphone.getText().toString().equals("nhanvien") && edtpass.getText().toString().equals("nhanvien"))){
                                 Intent intent = new Intent(DangNhapActivity.this, NhanVienActivity.class);
                                 startActivity(intent);}
-                                else
-                                Toast.makeText(DangNhapActivity.this, "Số điện thoại hoặc mật khẩu không đúng", Toast.LENGTH_SHORT).show();
+
                         }
                     }
 

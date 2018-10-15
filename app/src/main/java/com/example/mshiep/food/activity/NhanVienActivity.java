@@ -33,7 +33,7 @@ public class NhanVienActivity extends AppCompatActivity {
             public void run() {
                 try {
                     while (!thread.isInterrupted()) {
-                        Thread.sleep(5000);
+                        Thread.sleep(2000);
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -265,9 +265,6 @@ public class NhanVienActivity extends AppCompatActivity {
 
                                     }
                                 };
-                                Query query2 =  FirebaseDatabase.getInstance().getReference("Order").orderByChild("trangThaiOrder").equalTo(1);
-                                query2.addListenerForSingleValueEvent(valueEventListener2);
-
                                 ValueEventListener valueEventListener = new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -435,6 +432,11 @@ public class NhanVienActivity extends AppCompatActivity {
 
                                     }
                                 };
+
+
+
+                                Query query2 =  FirebaseDatabase.getInstance().getReference("Order").orderByChild("trangThaiOrder").equalTo(1);
+                                query2.addListenerForSingleValueEvent(valueEventListener2);
                                 Query query =  FirebaseDatabase.getInstance().getReference("TrangThai").orderByChild("trangThai").equalTo(1);
                                 query.addListenerForSingleValueEvent(valueEventListener);
 
@@ -455,41 +457,41 @@ public class NhanVienActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String value1 = intent.getStringExtra("ttt");
         if (btn1.getText().toString().equals(value1)){
-            btn1.setText("Đã đủ");
+            btn1.setText("Bàn 01");
         }
         else if (btn2.getText().toString().equals(value1)){
-            btn2.setText("Đã đủ");
+            btn2.setText("Bàn 02");
         }
         else if (btn3.getText().toString().equals(value1)){
-            btn3.setText("Đã đủ");
+            btn3.setText("Bàn 03");
         }
         else if (btn4.getText().toString().equals(value1)){
-            btn4.setText("Đã đủ");
+            btn4.setText("Bàn 04");
         }
         else if (btn5.getText().toString().equals(value1)){
-            btn5.setText("Đã đủ");
+            btn5.setText("Bàn 05");
         }
         else if (btn6.getText().toString().equals(value1)){
-            btn6.setText("Đã đủ");
+            btn6.setText("Bàn 06");
         }
         else if (btn7.getText().toString().equals(value1)){
-            btn7.setText("Đã đủ");
+            btn7.setText("Bàn 07");
         } else if (btn8.getText().toString().equals(value1)){
-            btn8.setText("Đã đủ");
+            btn8.setText("Bàn 08");
         } else if (btn9.getText().toString().equals(value1)){
-            btn9.setText("Đã đủ");
+            btn9.setText("Bàn 09");
         } else if (btn10.getText().toString().equals(value1)){
-            btn10.setText("Đã đủ");
+            btn10.setText("Bàn 10");
         } else if (btn11.getText().toString().equals(value1)){
-            btn11.setText("Đã đủ");
+            btn11.setText("Bàn 11");
         } else if (btn12.getText().toString().equals(value1)){
-            btn12.setText("Đã đủ");
+            btn12.setText("Bàn 12");
         } else if (btn13.getText().toString().equals(value1)){
-            btn13.setText("Đã đủ");
+            btn13.setText("Bàn 13");
         } else if (btn14.getText().toString().equals(value1)){
-            btn14.setText("Đã đủ");
+            btn14.setText("Bàn 14");
         } else if (btn15.getText().toString().equals(value1)){
-            btn15.setText("Đã đủ");
+            btn15.setText("Bàn 15");
         }
         super.onStart();
     }
