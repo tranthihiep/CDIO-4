@@ -20,7 +20,7 @@ import android.widget.Button;
 
 public class NhanVienActivity extends AppCompatActivity {
     DatabaseReference mData,mData2;
-    Thread thread,thread2;
+    Thread thread;
    public Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -268,24 +268,6 @@ public class NhanVienActivity extends AppCompatActivity {
                                 Query query2 =  FirebaseDatabase.getInstance().getReference("Order").orderByChild("trangThaiOrder").equalTo(1);
                                 query2.addListenerForSingleValueEvent(valueEventListener2);
 
-                            }
-                        });
-                    }
-                } catch (InterruptedException e) {
-                }
-            }
-        };
-
-        thread.start();
-        thread2 = new Thread() {
-            @Override
-            public void run() {
-                try {
-                    while (!thread2.isInterrupted()) {
-                        Thread.sleep(5000);
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
                                 ValueEventListener valueEventListener = new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -465,9 +447,7 @@ public class NhanVienActivity extends AppCompatActivity {
             }
         };
 
-        thread2.start();
-
-
+        thread.start();
     }
 
     @Override
