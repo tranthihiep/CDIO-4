@@ -4,18 +4,18 @@ public class Order {
     public String maOrder;
     public String maKH;
     public String tenMon;
-    public long giaMon;
+    public float giaMon;
     public int soLuong;
     public String soBan;
     public String ngayOrder;
     public String thangOrder;
     public String namOrder;
-    public int trangThai;
+    public int trangThaiOrder;
 
     public Order() {
     }
 
-    public Order(String maOrder, String maKH, String tenMon, long giaMon, int soLuong, String soBan, String ngayOrder, String thangOrder, String namOrder, int trangThai) {
+    public Order(String maOrder, String maKH, String tenMon, float giaMon, int soLuong, String soBan, String ngayOrder, String thangOrder, String namOrder, int trangThai) {
         this.maOrder = maOrder;
         this.maKH = maKH;
         this.tenMon = tenMon;
@@ -25,7 +25,7 @@ public class Order {
         this.ngayOrder = ngayOrder;
         this.thangOrder = thangOrder;
         this.namOrder = namOrder;
-        this.trangThai = trangThai;
+        this.trangThaiOrder = trangThai;
     }
 
     public String getMaOrder() {
@@ -52,11 +52,11 @@ public class Order {
         this.tenMon = tenMon;
     }
 
-    public long getGiaMon() {
+    public float getGiaMon() {
         return giaMon;
     }
 
-    public void setGiaMon(long giaMon) {
+    public void setGiaMon(float giaMon) {
         this.giaMon = giaMon;
     }
 
@@ -100,11 +100,11 @@ public class Order {
         this.namOrder = namOrder;
     }
 
-    public int getTrangThai() {
-        return trangThai;
+    public int getTrangThaiOrder() {
+        return trangThaiOrder;
     }
 
-    public void setTrangThai(int trangThai) {
-        this.trangThai = trangThai;
+    public void setTrangThaiOrder(int trangThai) {
+        this.trangThaiOrder = trangThai;
     }
 }

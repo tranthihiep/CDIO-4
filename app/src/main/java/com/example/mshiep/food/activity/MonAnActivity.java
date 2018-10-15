@@ -35,14 +35,14 @@ public class MonAnActivity extends AppCompatActivity {
     ListView lvMonAn;
     ArrayList<MonAn> monAnArrayList;
     MonAnAdapter quanLyMonAnAdapter;
+    String value1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mon_an);
         anhXa();
         actionToolBar();
-        Intent intent = getIntent();
-        String value1 = intent.getStringExtra("haha");
+
         ValueEventListener valueEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -90,6 +90,9 @@ public class MonAnActivity extends AppCompatActivity {
         monAnArrayList = new ArrayList<>();
         quanLyMonAnAdapter = new MonAnAdapter(monAnArrayList,getApplicationContext());
         lvMonAn.setAdapter(quanLyMonAnAdapter);
+        Intent intent = getIntent();
+        value1 = intent.getStringExtra("haha");
+        toolbarChiTiet.setTitle(value1);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

@@ -5,24 +5,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.example.mshiep.food.R;
 import com.example.mshiep.food.Unit.Check;
-import com.example.mshiep.food.activity.HomeActivity;
-import com.example.mshiep.food.activity.OrderActivity;
 import com.example.mshiep.food.model.Order;
-import com.squareup.picasso.Picasso;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class OrderAdapter extends BaseAdapter {
+public class OrderNhanVienAdapter extends BaseAdapter {
     Context context;
     ArrayList<Order> arrayOrder;
     ViewHolder viewHolder = null;
-    public OrderAdapter(Context context, ArrayList<Order> arrayOrder) {
+    public OrderNhanVienAdapter(Context context, ArrayList<Order> arrayOrder) {
         this.context = context;
         this.arrayOrder = arrayOrder;
     }
@@ -62,8 +58,7 @@ public class OrderAdapter extends BaseAdapter {
         }
         Order order = (Order) getItem(position);
         viewHolder.txtTenOrder.setText(order.getTenMon());
-        DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
-        viewHolder.txtGiaOrder.setText(decimalFormat.format(order.getGiaMon()));
+        viewHolder.txtGiaOrder.setText("Số lượng: "+ order.getSoLuong());
         return convertView;
     }
 }

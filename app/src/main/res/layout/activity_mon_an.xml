@@ -13,7 +13,6 @@
         android:id="@+id/toolbarchitiet"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="Món ăn"
         app:titleTextColor="#f00"
         android:background="#d4cdcd"
         >

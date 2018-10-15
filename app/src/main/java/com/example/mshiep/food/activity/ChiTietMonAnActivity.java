@@ -158,9 +158,9 @@ public class ChiTietMonAnActivity extends AppCompatActivity implements RatingDia
                        String sb = spinnerBan.getSelectedItem().toString();
                        long giaMoi = (long) (soLuong * gia);
                        HomeActivity.mangOrder.add(new Order(id,DangNhapActivity.tenKhachHang,tenchitiet,giaMoi,
-                               soLuong,sb, sdf.format(date),sdfMonth.format(date),sdfYear.format(date)));
+                               soLuong,sb, sdf.format(date),sdfMonth.format(date),sdfYear.format(date),1));
                        Order kh = new Order(id,DangNhapActivity.tenKhachHang,tenchitiet,giaMoi,
-                               soLuong,sb,sdf.format(date),sdfMonth.format(date),sdfYear.format(date));
+                               soLuong,sb,sdf.format(date),sdfMonth.format(date),sdfYear.format(date),1);
                        mData.child(id).setValue(kh, new DatabaseReference.CompletionListener() {
                            @Override
                            public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
@@ -178,10 +178,10 @@ public class ChiTietMonAnActivity extends AppCompatActivity implements RatingDia
                    long giaMoi = (long) (soLuong * gia);
 
                    HomeActivity.mangOrder.add(new Order(id,DangNhapActivity.tenKhachHang,tenchitiet,giaMoi,soLuong,sb,
-                           sdf.format(date),sdfMonth.format(date),sdfYear.format(date)));
+                           sdf.format(date),sdfMonth.format(date),sdfYear.format(date),1));
 
                    Order kh = new Order(id,DangNhapActivity.tenKhachHang,tenchitiet,giaMoi,soLuong,sb,
-                           sdf.format(date),sdfMonth.format(date),sdfYear.format(date));
+                           sdf.format(date),sdfMonth.format(date),sdfYear.format(date),1);
                    mData.child(id).setValue(kh, new DatabaseReference.CompletionListener() {
                        @Override
                        public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {

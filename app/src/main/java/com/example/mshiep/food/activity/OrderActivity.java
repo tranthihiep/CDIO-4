@@ -184,7 +184,7 @@ public class OrderActivity extends AppCompatActivity {
             tongtien += HomeActivity.mangOrder.get(i).getGiaMon();
         }
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
-        txtTongTien.setText(decimalFormat.format(tongtien) + " Đ");
+        txtTongTien.setText(decimalFormat.format(tongtien));
     }
 
     private void checkData() {
