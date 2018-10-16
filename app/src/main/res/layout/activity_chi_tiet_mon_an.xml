@@ -132,7 +132,7 @@
                 android:layout_width="70dp"
                 android:layout_height="54dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/comment" />
+                android:src="@drawable/binhLuan" />
         </LinearLayout>
 
         <android.support.v7.widget.RecyclerView

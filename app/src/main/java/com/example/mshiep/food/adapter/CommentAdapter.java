@@ -7,14 +7,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.mshiep.food.R;
 import com.example.mshiep.food.Unit.Check;
 import com.example.mshiep.food.model.DanhGia;
-import com.example.mshiep.food.model.DanhMuc;
 
 import java.util.ArrayList;
 
@@ -38,7 +36,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ItemHold
         Check.typeFaceTV(context,holder.txtTenKhCM);
         DanhGia monAn = arrayListMonAn.get(position);
         holder.txtTenKhCM.setText(monAn.getTenKhachHang());
-        holder.txtCMtCM.setText(monAn.getComment());
+        holder.txtCMtCM.setText(monAn.getBinhLuan());
         holder.ratingBar.setRating(monAn.getRate());
     }
 

@@ -4,14 +4,14 @@ public class DanhGia {
     String maDanhGia;
     String maMonAn;
     int rate;
-    String comment;
+    String binhLuan;
     String tenKhachHang;
 
     public DanhGia(String maDanhGia, String maMonAn, int rate, String comment, String tenKhachHang) {
         this.maDanhGia = maDanhGia;
         this.maMonAn = maMonAn;
         this.rate = rate;
-        this.comment = comment;
+        this.binhLuan = comment;
         this.tenKhachHang = tenKhachHang;
     }
 
@@ -42,12 +42,12 @@ public class DanhGia {
         this.rate = rate;
     }
 
-    public String getComment() {
-        return comment;
+    public String getBinhLuan() {
+        return binhLuan;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setBinhLuan(String binhLuan) {
+        this.binhLuan = binhLuan;
     }
 
     public String getTenKhachHang() {
